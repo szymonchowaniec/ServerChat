@@ -1,6 +1,5 @@
 package pl.szymonchowaniec.chat.model.socket;
 
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -91,7 +90,6 @@ public class ChatSocket extends TextWebSocketHandler implements WebSocketConfigu
         logModel.setMessage(context);
         logModel.setSender(sender.getNickname());
         logModel.setDate(LocalDateTime.now());
-        ;
         logRepository.save(logModel);
     }
 

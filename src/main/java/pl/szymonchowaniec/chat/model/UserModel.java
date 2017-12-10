@@ -17,7 +17,7 @@ public class UserModel {
     public UserModel(WebSocketSession session) {
         this.session = session;
         this.nickname = null;
-        //todo convert nickname to Optional
+
     }
 
     public int getSentPrivate() {
